@@ -16,24 +16,38 @@
     <div class="form-group">
        <h1>Login</h1>
     </div>
-    <div class="form-group">
+    <div class="form-group" id="email">
     <label for="exampleInputEmail1">Correo</label>
     <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
    
     <div class="invalid-feedback">
-    El correo es vacio.
+    
     </div>
 
   </div>
-  <div class="form-group">
+  <div class="form-group" id="password">
     <label for="exampleInputPassword1">Contraseña</label>
     <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+ 
+    <div class="invalid-feedback">
+    
+    </div>
+ 
   </div>
   <div class="form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
+  <div class="form-group">
   <button type="submit" class="btn btn-primary">Ingresar</button>
+  </div>
+  <div class="form-group" id="alert">
+  </div>
 </form>
+</div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="<?= base_url('assets/js/auth/login.js') ?>"></script>
 </body>
 </html>

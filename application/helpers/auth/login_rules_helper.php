@@ -16,7 +16,7 @@ function getLoginRules(){
                 'label' => 'Contraseña',
                 'rules' => 'required|trim',
                 'errors' => array(
-                        'required' => 'La %s es requerido.',
+                        'required' => 'La contraseña es requerida.',
                 ),
             ),   
         
