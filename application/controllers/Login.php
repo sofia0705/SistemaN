@@ -5,10 +5,10 @@ class Login extends CI_Controller {
         parent::__construct();
         $this->load->library(array('form_validation','session'));
         $this->load->helper(array('auth/login_rules'));
-        $this->load->model('Auth');
+        $this->load->model('ModelsUsers');
     }
     public function index(){
-        $this->load->view('login');
+        $this->load->view('login','registro');
     }
     public function validate(){
         $this->form_validation->set_error_delimiters('','');
