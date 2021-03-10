@@ -5,13 +5,16 @@ class Users extends CI_Controller {
         parent::__construct();
         $this->load->library(array('form_validation','email'));
         $this->load->helper(array('users/users_rules','string'));
-        $this->load->model('ModelsUsers');
+        $this->load->model('ModelsUsers','');
     }
     public function index(){
         echo 'Tablas de Usuarios';
     }
     
     public function create(){
+        $vista = $this->load->view('admin/create_users','',TRUE);
+        $this->getTemplate($vista);
+
         $vista = $this->load->view('registro','',true);
         $this->getTemplate($vista);
     }

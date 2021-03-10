@@ -1,4 +1,4 @@
-
+<form action="<?= base_url('users/store') ?>" method="POST">
 <!DOCTYPE html>
 <html lang="es">
 

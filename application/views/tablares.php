@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -377,6 +377,29 @@
 
                         </div>
                     </div>
+                     <!-- Page Heading -->
+                     <h1 class="h3 mb-2 text-gray-800">Registro de Usuarios</h1>
+                    <p class="mb-4">Tabla<a target="_blank"
+                            href="https://datatables.net"></a>.</p>
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Usuarios</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>id</th>
+                                            <th>Nombre_usuarios</th>
+                                            <th>Nombre</th>
+                                            <th>Apellido</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
 
                 </div>
                 <!-- /.container-fluid -->
@@ -427,3 +450,4 @@
 </body>
 
 </html>
+
