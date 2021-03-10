@@ -6,7 +6,7 @@ class Registro extends CI_Controller {
     public function __construct()
 	{
 		parent:: __construct();
-        $this->load->helper(array('getmenu'));
+        $this->load->helper(array('getmenu','users/users_rules'));
         $this->load->model('Users');
 
         $this->load->library(array('form_validation'));
