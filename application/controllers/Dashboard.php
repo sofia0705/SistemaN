@@ -7,7 +7,7 @@ class Dashboard extends CI_Controller {
     }
     public function index(){
         if($this->session->userdata('is_logged')){
-            $vista = $this->load->view('admin/show_users','login', 'registro', '', TRUE);
+            $vista = $this->load->view('admin/show_users','login', 'registro', 'archivos','tablares',TRUE);
             $this->getTemplate($vista);
 
             
